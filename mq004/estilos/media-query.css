@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+@media print
+{
+
+    *
+    {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main h1
+    {
+        text-shadow: none;
+        color: black;
+    }
+
+    main
+    {
+        border: 2px solid black;
+    }
+
+    body
+    {
+        background-image: url(../imagens/back-print.jpg);
+    }
+
+    #ph{display: none;}
+    #ta{display: none;}
+    #pr{display: block;}
+    #pc{display: none;}
+    #tv{display: none;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px)
+{
+        body
+        {
+            background-image: url(../imagens/back-tablet.jpg);
+        }
+
+    #ph{display: none;}
+    #ta{display: block;}
+    #pr{display: none;}
+    #pc{display: none;}
+    #tv{display: none;}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px)
+{
+        body
+        {
+            background-image: url(../imagens/back-pc.jpg);
+        }
+        
+    #ph{display: none;}
+    #ta{display: none;}
+    #pr{display: none;}
+    #pc{display: block;}
+    #tv{display: none;}
+}
+
+@media screen and (min-width: 1201px)
+{
+        body
+        {
+            background-image: url(../imagens/back-tv.jpg);
+        }
+
+    #ph{display: none;}
+    #ta{display: none;}
+    #pr{display: none;}
+    #pc{display: none;}
+    #tv{display: block;}
+}
